@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> counter app </title>
+        <style>
+            body{
+                font-family: Arial;
+                text-align:center;
+                margin-top:100px;
+            }
+            h1{
+                font-size:40px;
+            }
+            button{
+                padding:10px 20px;
+                font-size:18px;
+                margin:10px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="count">0</h1>
+        <button onclick="increse()">Increse</button>
+        <button onclic="decrese()">Decrese</button>
+        <script>
+            let count = 0;
+
+            function increse(){
+                count++
+                document.getElementById("count").innerText = count;
+            }
+            function decrese(){
+                count--;
+                documemt.getElementById("count").innerText = count;
+            }
+        </script>
+    </body>
+</html>
